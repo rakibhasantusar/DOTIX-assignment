@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-2 ">
+        <form class="col-md-8 m-auto py-5">
+            <div class="input-group mb-3 ">
+                <button id="my-wether" type="button" class="btn btn-outline-danger text-white mr-1">My
+                    Wether</button>
+                <input id="city-name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+
+                <div class="input-group-append">
+                    <select id="select1" class="table-bordered " aria-label="select example">
+                        <option value="metric">Celsius</option>
+                        <option value="imperial">Fahrenheit</option>
+                    </select>
+                    <button onclick="searchTemperature()" type="button" class="btn btn-danger">Get Weather</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city">Dhaka</h1>
+            <h3><span id="temperature">38.06</span>&deg;<span id="temperature-unit">C</span></h3>
+            <p>wind speed:<span id="wind-speed" class="text-warning font-weight-bold">2.54
+                </span>km/h<span id="wind-degree" class="text-warning ml-1">350</span>&deg;</p>
+            <p>Humidity:<span class="text-warning" id="humidity">66</span>g/m3</p>
+            <h1 id="condition" class="lead">Clouds</h1>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
